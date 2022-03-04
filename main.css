@@ -208,5 +208,89 @@ body {
 }
 
 /* Your CSS starts here */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 16px;
+  border-radius: 8px;
+  min-width: 171px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: "Karla", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: #1d4ed8;
+}
+
+.btn.btn--primary {
+  background: rgba(29, 78, 216, 1);
+  color: #ffffff;
+}
+
+.btn:disabled.btn--primary,
+.btn.btn--disable.btn--primary {
+  background: rgba(29, 78, 216, 0.3);
+}
+
+.btn.btn--outline.btn--primary {
+  background: transparent;
+  border: 1.5px solid rgba(29, 79, 215, 1);
+  color: #1d4ed8;
+}
+
+.btn.btn--outline:disabled.btn--primary,
+.btn.btn--outline.btn--disable.btn--primary {
+  border: 1.5px solid rgba(29, 79, 215, 0.3);
+}
+
+.btn.btn--secondary {
+  background: rgba(244, 245, 246, 1);
+  color: #0b2253;
+}
+
+.btn:disabled.btn--secondary,
+.btn.btn--disable.btn--secondary {
+  background: rgba(244, 245, 246, 0.3);
+}
+
+.btn.btn--outline.btn--secondary {
+  background: transparent;
+  border: 1.5px solid rgba(244, 245, 246, 1);
+}
+
+.btn.btn--outline:disabled.btn--secondary,
+.btn.btn--outline.btn--disable.btn--secondary {
+  border: 1.5px solid rgba(244, 245, 246, 0.3);
+}
+
+.btn.btn--loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8125rem;
+}
+
+.spinner {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid rgba(39, 190, 99, 1);
+  border-top-color: rgba(255, 255, 255, 1);
+  border-left-color: rgba(255, 255, 255, 1);
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 /* Your CSS ends here */

@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500Inter:wght@500&family=Inter:wght@500&display=swap"
-    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Karla:wght@400;500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="main.css">
 </head>
 
@@ -21,9 +20,29 @@
 
       <div class="button-section__buttons">
         <!-- Your HTML starts here -->
+        <button class="btn btn--primary">
+          Button
+        </button>
 
+        <button disabled="disabled" class="btn btn--primary btn--disabled">
+          Button
+        </button>
 
+        <button class="btn">
+          Button
+        </button>
 
+        <button class="btn btn--secondary">
+          Button
+        </button>
+
+        <button class="btn btn--outline btn--primary">
+          Button
+        </button>
+
+        <button class="btn btn--primary btn--loading">
+          <span>Loading</span><span class="spinner"></span>
+        </button>
         <!-- Your HTML ends here -->
       </div>
     </section>
